@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20180920 21:13:02.028">
+<suite id="s1" name="Test01" source="C:\Users\Paola Lopez\Documents\ClaseRobot\test01.robot">
+<test id="s1-t1" name="Buscar Palabra en el Navegador Chrome">
+<kw name="Abrir navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://google.com</arg>
+<arg>${navegador}</arg>
+</arguments>
+<msg timestamp="20180920 21:13:02.175" level="INFO">Opening browser 'gc' to base url 'http://google.com'.</msg>
+<status status="PASS" starttime="20180920 21:13:02.175" endtime="20180920 21:13:07.341"></status>
+</kw>
+<status status="PASS" starttime="20180920 21:13:02.175" endtime="20180920 21:13:07.342"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180920 21:13:07.343" endtime="20180920 21:13:08.476"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>hplogo</arg>
+</arguments>
+<msg timestamp="20180920 21:13:08.510" level="INFO">Element 'hplogo' is displayed.</msg>
+<status status="PASS" starttime="20180920 21:13:08.476" endtime="20180920 21:13:08.510"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css=#lst-ib</arg>
+<arg>hola</arg>
+</arguments>
+<msg timestamp="20180920 21:13:08.511" level="INFO">Typing text 'hola' into text field 'css=#lst-ib'.</msg>
+<status status="PASS" starttime="20180920 21:13:08.510" endtime="20180920 21:13:08.603"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="tsf"]/div[2]/div[3]/center/input[1]</arg>
+</arguments>
+<msg timestamp="20180920 21:13:08.603" level="INFO">Clicking element 'xpath=//*[@id="tsf"]/div[2]/div[3]/center/input[1]'.</msg>
+<status status="PASS" starttime="20180920 21:13:08.603" endtime="20180920 21:13:09.799"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>hola</arg>
+</arguments>
+<msg timestamp="20180920 21:13:09.838" level="INFO">Current page contains text 'hola'.</msg>
+<status status="PASS" starttime="20180920 21:13:09.799" endtime="20180920 21:13:09.838"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180920 21:13:09.838" endtime="20180920 21:13:12.037"></status>
+</kw>
+<status status="PASS" starttime="20180920 21:13:02.175" endtime="20180920 21:13:12.037" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180920 21:13:02.028" endtime="20180920 21:13:12.045"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test01">Test01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

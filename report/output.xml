@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20180924 20:22:22.351">
+<suite id="s1" name="Test02" source="C:\Users\Paola Lopez\Documents\ClaseRobot\test02_02\test02.robot">
+<test id="s1-t1" name="Buscar Palabra en el Navegador Chrome">
+<kw name="Abrir navegador" library="recursos">
+<arguments>
+<arg>http://winstoncastillo.com/udemy/</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${navegador}</arg>
+</arguments>
+<msg timestamp="20180924 20:22:22.505" level="INFO">Opening browser 'gc' to base url 'http://winstoncastillo.com/udemy/'.</msg>
+<status status="PASS" starttime="20180924 20:22:22.505" endtime="20180924 20:22:26.736"></status>
+</kw>
+<status status="PASS" starttime="20180924 20:22:22.504" endtime="20180924 20:22:26.737"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180924 20:22:26.737" endtime="20180924 20:22:27.870"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]/div/div[2]/a[2]</arg>
+</arguments>
+<status status="PASS" starttime="20180924 20:22:27.870" endtime="20180924 20:22:27.904"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=body &gt; div.container.align-middle &gt; div &gt; div:nth-child(4) &gt; a:nth-child(2)</arg>
+</arguments>
+<msg timestamp="20180924 20:22:27.905" level="INFO">Clicking element 'css=body &gt; div.container.align-middle &gt; div &gt; div:nth-child(4) &gt; a:nth-child(2)'.</msg>
+<status status="PASS" starttime="20180924 20:22:27.905" endtime="20180924 20:22:27.987"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Screenshot">
+<doc>Sets the directory where screenshots are saved.</doc>
+<arguments>
+<arg>../screenshot/</arg>
+</arguments>
+<status status="PASS" starttime="20180924 20:22:27.987" endtime="20180924 20:22:27.989"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=#exampleModalLabel</arg>
+</arguments>
+<status status="PASS" starttime="20180924 20:22:27.989" endtime="20180924 20:22:28.240"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="exampleModalLabel"]</arg>
+<arg>Modal title</arg>
+</arguments>
+<msg timestamp="20180924 20:22:28.241" level="INFO">Verifying element 'xpath=//*[@id="exampleModalLabel"]' contains exact text 'Modal title'.</msg>
+<status status="PASS" starttime="20180924 20:22:28.241" endtime="20180924 20:22:28.274"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180924 20:22:28.274" endtime="20180924 20:22:30.460"></status>
+</kw>
+<status status="PASS" starttime="20180924 20:22:22.504" endtime="20180924 20:22:30.463" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180924 20:22:22.352" endtime="20180924 20:22:30.472"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test02">Test02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20180922 11:41:58.217">
+<suite id="s1" name="Test04" source="C:\Users\Paola Lopez\Documents\ClaseRobot\test04\test04.robot">
+<test id="s1-t1" name="Buscar Palabra en el Navegador Chrome">
+<kw name="Abrir navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://google.com</arg>
+<arg>${navegador}</arg>
+</arguments>
+<msg timestamp="20180922 11:41:58.393" level="INFO">Opening browser 'gc' to base url 'http://google.com'.</msg>
+<status status="PASS" starttime="20180922 11:41:58.393" endtime="20180922 11:42:04.668"></status>
+</kw>
+<status status="PASS" starttime="20180922 11:41:58.392" endtime="20180922 11:42:04.668"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180922 11:42:04.668" endtime="20180922 11:42:05.824"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com/index.php</arg>
+</arguments>
+<msg timestamp="20180922 11:42:05.825" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" starttime="20180922 11:42:05.824" endtime="20180922 11:42:09.785"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#contact-link &gt; a</arg>
+</arguments>
+<msg timestamp="20180922 11:42:09.786" level="INFO">Clicking element 'css=#contact-link &gt; a'.</msg>
+<status status="PASS" starttime="20180922 11:42:09.786" endtime="20180922 11:42:10.707"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=id_contact</arg>
+</arguments>
+<msg timestamp="20180922 11:42:10.708" level="INFO">Clicking element 'id=id_contact'.</msg>
+<status status="PASS" starttime="20180922 11:42:10.708" endtime="20180922 11:42:10.830"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="id_contact"]/option[3]</arg>
+</arguments>
+<msg timestamp="20180922 11:42:10.833" level="INFO">Clicking element 'xpath=//*[@id="id_contact"]/option[3]'.</msg>
+<status status="PASS" starttime="20180922 11:42:10.833" endtime="20180922 11:42:10.905"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#id_order</arg>
+</arguments>
+<status status="PASS" starttime="20180922 11:42:10.907" endtime="20180922 11:42:10.952"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css=#id_order</arg>
+<arg>order</arg>
+</arguments>
+<msg timestamp="20180922 11:42:10.953" level="INFO">Typing text 'order' into text field 'css=#id_order'.</msg>
+<status status="PASS" starttime="20180922 11:42:10.953" endtime="20180922 11:42:11.055"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css=#message</arg>
+<arg>test paola</arg>
+</arguments>
+<msg timestamp="20180922 11:42:11.056" level="INFO">Typing text 'test paola' into text field 'css=#message'.</msg>
+<status status="PASS" starttime="20180922 11:42:11.055" endtime="20180922 11:42:11.175"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#submitMessage &gt; span</arg>
+</arguments>
+<status status="PASS" starttime="20180922 11:42:11.176" endtime="20180922 11:42:11.197"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#submitMessage &gt; span</arg>
+</arguments>
+<msg timestamp="20180922 11:42:11.199" level="INFO">Clicking element 'css=#submitMessage &gt; span'.</msg>
+<status status="PASS" starttime="20180922 11:42:11.199" endtime="20180922 11:42:11.877"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>css=#center_column &gt; div &gt; ol &gt; li</arg>
+<arg>Invalid email address.</arg>
+</arguments>
+<msg timestamp="20180922 11:42:11.877" level="INFO">Verifying element 'css=#center_column &gt; div &gt; ol &gt; li' contains exact text 'Invalid email address.'.</msg>
+<status status="PASS" starttime="20180922 11:42:11.877" endtime="20180922 11:42:11.919"></status>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened pop-up window.</doc>
+<status status="PASS" starttime="20180922 11:42:11.920" endtime="20180922 11:42:12.086"></status>
+</kw>
+<status status="PASS" starttime="20180922 11:41:58.391" endtime="20180922 11:42:12.088" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180922 11:41:58.218" endtime="20180922 11:42:12.090"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test04">Test04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

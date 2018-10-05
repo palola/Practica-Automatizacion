@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20180924 19:32:10.019">
+<suite id="s1" name="Test02" source="C:\Users\Paola Lopez\Documents\ClaseRobot\test02_02\test02.robot">
+<test id="s1-t1" name="Buscar Palabra en el Navegador Chrome">
+<kw name="Abrir navegador" library="recursos">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://google.com</arg>
+<arg>${navegador}</arg>
+</arguments>
+<msg timestamp="20180924 19:32:10.889" level="INFO">Opening browser 'gc' to base url 'http://google.com'.</msg>
+<status status="PASS" starttime="20180924 19:32:10.889" endtime="20180924 19:32:17.573"></status>
+</kw>
+<status status="PASS" starttime="20180924 19:32:10.889" endtime="20180924 19:32:17.573"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180924 19:32:17.574" endtime="20180924 19:32:18.715"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://winstoncastillo.com/udemy/</arg>
+</arguments>
+<msg timestamp="20180924 19:32:18.716" level="INFO">Opening url 'http://winstoncastillo.com/udemy/'</msg>
+<status status="PASS" starttime="20180924 19:32:18.716" endtime="20180924 19:32:19.583"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]/div/div[2]/a[2]</arg>
+</arguments>
+<status status="PASS" starttime="20180924 19:32:19.584" endtime="20180924 19:32:19.619"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=body &gt; div.container.align-middle &gt; div &gt; div:nth-child(4) &gt; a:nth-child(2)</arg>
+</arguments>
+<msg timestamp="20180924 19:32:19.620" level="INFO">Clicking element 'css=body &gt; div.container.align-middle &gt; div &gt; div:nth-child(4) &gt; a:nth-child(2)'.</msg>
+<status status="PASS" starttime="20180924 19:32:19.620" endtime="20180924 19:32:19.697"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>../screenshot/</arg>
+</arguments>
+<status status="PASS" starttime="20180924 19:32:19.697" endtime="20180924 19:32:19.697"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=#exampleModalLabel</arg>
+</arguments>
+<status status="PASS" starttime="20180924 19:32:19.698" endtime="20180924 19:32:19.948"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>xpath=//*[@id="exampleModalLabel"]</arg>
+<arg>Modal Title</arg>
+</arguments>
+<msg timestamp="20180924 19:32:19.949" level="INFO">Verifying element 'xpath=//*[@id="exampleModalLabel"]' contains exact text 'Modal Title'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180924 19:32:20.396" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/selenium-screenshot-1.png"&gt;&lt;img src="../screenshot/selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180924 19:32:19.980" endtime="20180924 19:32:20.396"></status>
+</kw>
+<msg timestamp="20180924 19:32:20.425" level="FAIL">The text of element 'xpath=//*[@id="exampleModalLabel"]' should have been 'Modal Title' but it was 'Modal title'.</msg>
+<status status="FAIL" starttime="20180924 19:32:19.948" endtime="20180924 19:32:20.425"></status>
+</kw>
+<status status="FAIL" starttime="20180924 19:32:10.888" endtime="20180924 19:32:20.426" critical="yes">The text of element 'xpath=//*[@id="exampleModalLabel"]' should have been 'Modal Title' but it was 'Modal title'.</status>
+</test>
+<status status="FAIL" starttime="20180924 19:32:10.021" endtime="20180924 19:32:20.427"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test02">Test02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20180927 20:51:53.966">
+<suite id="s1" name="Loop" source="C:\Users\Paola Lopez\Documents\ClaseRobot\loop.robot">
+<test id="s1-t1" name="Abrir elementos del Homepage">
+<kw name="Abrir Home Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${esquema}://${homepage}</arg>
+<arg>${navegador}</arg>
+</arguments>
+<msg timestamp="20180927 20:51:54.146" level="INFO">Opening browser 'gc' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20180927 20:51:54.146" endtime="20180927 20:52:01.799"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:51:54.146" endtime="20180927 20:52:01.799"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180927 20:52:01.806" endtime="20180927 20:52:02.946"></status>
+</kw>
+<kw name="${elementos} IN [ @{nombre_elementos} ]" type="for">
+<kw name="${elementos} = //*[@id=&quot;homefeatured&quot;]/li[1]/div/div[1]/div/a[2]/span" type="foritem">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=@{over_elementos}[${contador}]</arg>
+</arguments>
+<msg timestamp="20180927 20:52:02.949" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="homefeatured"]/li[1]/div/div[1]/div/a[1]/img'.</msg>
+<status status="PASS" starttime="20180927 20:52:02.948" endtime="20180927 20:52:03.017"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:03.017" endtime="20180927 20:52:03.072"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<msg timestamp="20180927 20:52:03.073" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[1]/div/div[1]/div/a[2]/span'.</msg>
+<status status="PASS" starttime="20180927 20:52:03.073" endtime="20180927 20:52:04.203"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:04.203" endtime="20180927 20:52:04.495"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<msg timestamp="20180927 20:52:04.495" level="INFO">Clicking element 'xpath=//*[@id="index"]/div[2]/div/div/a'.</msg>
+<status status="PASS" starttime="20180927 20:52:04.495" endtime="20180927 20:52:04.559"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${contador}+1</arg>
+</arguments>
+<assign>
+<var>${contador}</var>
+</assign>
+<msg timestamp="20180927 20:52:04.559" level="INFO">${contador} = 1</msg>
+<status status="PASS" starttime="20180927 20:52:04.559" endtime="20180927 20:52:04.560"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:52:02.948" endtime="20180927 20:52:04.560"></status>
+</kw>
+<kw name="${elementos} = //*[@id=&quot;homefeatured&quot;]/li[2]/div/div[1]/div/a[2]/span" type="foritem">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=@{over_elementos}[${contador}]</arg>
+</arguments>
+<msg timestamp="20180927 20:52:04.560" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="homefeatured"]/li[2]/div/div[1]/div/a[1]/img'.</msg>
+<status status="PASS" starttime="20180927 20:52:04.560" endtime="20180927 20:52:04.697"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:04.698" endtime="20180927 20:52:05.167"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<msg timestamp="20180927 20:52:05.168" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[2]/div/div[1]/div/a[2]/span'.</msg>
+<status status="PASS" starttime="20180927 20:52:05.168" endtime="20180927 20:52:06.062"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:06.062" endtime="20180927 20:52:06.515"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<msg timestamp="20180927 20:52:06.515" level="INFO">Clicking element 'xpath=//*[@id="index"]/div[2]/div/div/a'.</msg>
+<status status="PASS" starttime="20180927 20:52:06.515" endtime="20180927 20:52:06.599"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${contador}+1</arg>
+</arguments>
+<assign>
+<var>${contador}</var>
+</assign>
+<msg timestamp="20180927 20:52:06.600" level="INFO">${contador} = 2</msg>
+<status status="PASS" starttime="20180927 20:52:06.599" endtime="20180927 20:52:06.600"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:52:04.560" endtime="20180927 20:52:06.600"></status>
+</kw>
+<kw name="${elementos} = //*[@id=&quot;homefeatured&quot;]/li[3]/div/div[1]/div/a[2]" type="foritem">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=@{over_elementos}[${contador}]</arg>
+</arguments>
+<msg timestamp="20180927 20:52:06.601" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="homefeatured"]/li[3]/div/div[1]/div/a[1]/img'.</msg>
+<status status="PASS" starttime="20180927 20:52:06.600" endtime="20180927 20:52:06.656"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:06.656" endtime="20180927 20:52:07.131"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<msg timestamp="20180927 20:52:07.131" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[3]/div/div[1]/div/a[2]'.</msg>
+<status status="PASS" starttime="20180927 20:52:07.131" endtime="20180927 20:52:08.133"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:08.134" endtime="20180927 20:52:08.617"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<msg timestamp="20180927 20:52:08.617" level="INFO">Clicking element 'xpath=//*[@id="index"]/div[2]/div/div/a'.</msg>
+<status status="PASS" starttime="20180927 20:52:08.617" endtime="20180927 20:52:08.677"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${contador}+1</arg>
+</arguments>
+<assign>
+<var>${contador}</var>
+</assign>
+<msg timestamp="20180927 20:52:08.678" level="INFO">${contador} = 3</msg>
+<status status="PASS" starttime="20180927 20:52:08.678" endtime="20180927 20:52:08.678"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:52:06.600" endtime="20180927 20:52:08.678"></status>
+</kw>
+<kw name="${elementos} = //*[@id=&quot;homefeatured&quot;]/li[4]/div/div[1]/div/a[2]/span" type="foritem">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=@{over_elementos}[${contador}]</arg>
+</arguments>
+<msg timestamp="20180927 20:52:08.679" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="homefeatured"]/li[4]/div/div[1]/div/a[1]/img'.</msg>
+<status status="PASS" starttime="20180927 20:52:08.678" endtime="20180927 20:52:08.722"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:08.722" endtime="20180927 20:52:09.209"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<msg timestamp="20180927 20:52:09.209" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[4]/div/div[1]/div/a[2]/span'.</msg>
+<status status="PASS" starttime="20180927 20:52:09.209" endtime="20180927 20:52:10.109"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:10.109" endtime="20180927 20:52:10.565"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<msg timestamp="20180927 20:52:10.565" level="INFO">Clicking element 'xpath=//*[@id="index"]/div[2]/div/div/a'.</msg>
+<status status="PASS" starttime="20180927 20:52:10.565" endtime="20180927 20:52:10.614"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${contador}+1</arg>
+</arguments>
+<assign>
+<var>${contador}</var>
+</assign>
+<msg timestamp="20180927 20:52:10.615" level="INFO">${contador} = 4</msg>
+<status status="PASS" starttime="20180927 20:52:10.615" endtime="20180927 20:52:10.615"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:52:08.678" endtime="20180927 20:52:10.615"></status>
+</kw>
+<kw name="${elementos} = //*[@id=&quot;homefeatured&quot;]/li[5]/div/div[1]/div/a[2]" type="foritem">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=@{over_elementos}[${contador}]</arg>
+</arguments>
+<msg timestamp="20180927 20:52:10.615" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="homefeatured"]/li[5]/div/div[1]/div/a[1]/img'.</msg>
+<status status="PASS" starttime="20180927 20:52:10.615" endtime="20180927 20:52:10.670"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:10.670" endtime="20180927 20:52:11.148"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<msg timestamp="20180927 20:52:11.148" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[5]/div/div[1]/div/a[2]'.</msg>
+<status status="PASS" starttime="20180927 20:52:11.148" endtime="20180927 20:52:12.428"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:12.428" endtime="20180927 20:52:12.881"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<msg timestamp="20180927 20:52:12.881" level="INFO">Clicking element 'xpath=//*[@id="index"]/div[2]/div/div/a'.</msg>
+<status status="PASS" starttime="20180927 20:52:12.881" endtime="20180927 20:52:12.962"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${contador}+1</arg>
+</arguments>
+<assign>
+<var>${contador}</var>
+</assign>
+<msg timestamp="20180927 20:52:12.963" level="INFO">${contador} = 5</msg>
+<status status="PASS" starttime="20180927 20:52:12.962" endtime="20180927 20:52:12.963"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:52:10.615" endtime="20180927 20:52:12.963"></status>
+</kw>
+<kw name="${elementos} = //*[@id=&quot;homefeatured&quot;]/li[6]/div/div[1]/div/a[2]/span" type="foritem">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=@{over_elementos}[${contador}]</arg>
+</arguments>
+<msg timestamp="20180927 20:52:12.963" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="homefeatured"]/li[6]/div/div[1]/div/a[1]/img'.</msg>
+<status status="PASS" starttime="20180927 20:52:12.963" endtime="20180927 20:52:13.021"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:13.021" endtime="20180927 20:52:13.492"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<msg timestamp="20180927 20:52:13.493" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[6]/div/div[1]/div/a[2]/span'.</msg>
+<status status="PASS" starttime="20180927 20:52:13.492" endtime="20180927 20:52:14.691"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:14.691" endtime="20180927 20:52:15.162"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<msg timestamp="20180927 20:52:15.163" level="INFO">Clicking element 'xpath=//*[@id="index"]/div[2]/div/div/a'.</msg>
+<status status="PASS" starttime="20180927 20:52:15.162" endtime="20180927 20:52:15.227"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${contador}+1</arg>
+</arguments>
+<assign>
+<var>${contador}</var>
+</assign>
+<msg timestamp="20180927 20:52:15.227" level="INFO">${contador} = 6</msg>
+<status status="PASS" starttime="20180927 20:52:15.227" endtime="20180927 20:52:15.227"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:52:12.963" endtime="20180927 20:52:15.227"></status>
+</kw>
+<kw name="${elementos} = //*[@id=&quot;homefeatured&quot;]/li[7]/div/div[1]/div/a[2]/span" type="foritem">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=@{over_elementos}[${contador}]</arg>
+</arguments>
+<msg timestamp="20180927 20:52:15.228" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="homefeatured"]/li[7]/div/div[1]/div/a[1]/img'.</msg>
+<status status="PASS" starttime="20180927 20:52:15.228" endtime="20180927 20:52:15.270"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:15.270" endtime="20180927 20:52:15.963"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${elementos}</arg>
+</arguments>
+<msg timestamp="20180927 20:52:15.963" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[7]/div/div[1]/div/a[2]/span'.</msg>
+<status status="PASS" starttime="20180927 20:52:15.963" endtime="20180927 20:52:16.877"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<status status="PASS" starttime="20180927 20:52:16.878" endtime="20180927 20:52:17.369"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="index"]/div[2]/div/div/a</arg>
+</arguments>
+<msg timestamp="20180927 20:52:17.369" level="INFO">Clicking element 'xpath=//*[@id="index"]/div[2]/div/div/a'.</msg>
+<status status="PASS" starttime="20180927 20:52:17.369" endtime="20180927 20:52:17.445"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${contador}+1</arg>
+</arguments>
+<assign>
+<var>${contador}</var>
+</assign>
+<msg timestamp="20180927 20:52:17.445" level="INFO">${contador} = 7</msg>
+<status status="PASS" starttime="20180927 20:52:17.445" endtime="20180927 20:52:17.445"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:52:15.228" endtime="20180927 20:52:17.446"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:52:02.947" endtime="20180927 20:52:17.446"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180927 20:52:17.446" endtime="20180927 20:52:19.655"></status>
+</kw>
+<status status="PASS" starttime="20180927 20:51:54.145" endtime="20180927 20:52:19.657" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180927 20:51:53.968" endtime="20180927 20:52:19.668"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Loop">Loop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
